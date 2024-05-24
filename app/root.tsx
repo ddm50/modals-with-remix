@@ -1,12 +1,27 @@
 import {
-  Links,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
+    Links,
+    Meta,
+    Outlet,
+    Scripts,
+    ScrollRestoration, useSearchParams,
 } from "@remix-run/react";
+import './style.css'
+import './tailwind.css'
+import {useEffect} from "react";
 
 export function Layout({ children }: { children: React.ReactNode }) {
+    const [searchParams, setSearchParams] = useSearchParams()
+
+    useEffect(() => {
+        if (searchParams.get('created')) {
+            alert("Post created")
+            const params = new URLSearchParams();
+            params.delete("created");
+            setSearchParams(params, {
+                preventScrollReset: true,
+            });
+        }
+    }, [searchParams])
   return (
     <html lang="en">
       <head>

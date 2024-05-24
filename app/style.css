@@ -1,0 +1,29 @@
+table {
+    width: 100%;
+    text-align: left;
+}
+button {
+    background: #0071ff;
+    text-align: center;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: white;
+    border-radius: 8px;
+    font-weight: 500;
+    border: none;
+
+}
+button:hover {
+    cursor: pointer;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 700px;
+}
