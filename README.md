@@ -1,4 +1,5 @@
-# Welcome to Remix + Vite!
+# Modals with Remix
+https://blog.micromegas.dev/modals-with-remix
 
 📖 See the [Remix docs](https://remix.run/docs) and the [Remix Vite docs](https://remix.run/docs/en/main/guides/vite) for details on supported features.
 
